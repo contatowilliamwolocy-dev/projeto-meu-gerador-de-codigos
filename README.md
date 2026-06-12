@@ -1,4 +1,4 @@
-<h1>gerador de código css/html</h1>
+<h1 aling="center">gerador de código css/html</h1>
 <br>
 <br>
 <h2>este projeto esta sendo desenvolvido com os conhecimentos que estou aprendendo no DevCLUB</h2>
