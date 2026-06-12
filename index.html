@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css"rel="stylesheet">
+    <title>gerador de codigo css/ js/ html</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <!-- cabeçario -->
+        <header class="header">
+            <h1>
+                <i class="fa-solid fa-robot"></i>Gerador de <span>código com IA</span>
+            </h1>
+            <p>
+                 Deseja criar HTML, CSS ,JS?<br>
+                 descreva aqui o que deseja criar e clique no botão para gerar o código automaticamente. 
+            </p>
+        </header>
+        <!-- area de entrada -->
+        <section class="input-area">
+            <textarea id="userInput" class="fixo"
+                placeholder="descreva o que deseja criar, por exemplo: um site de portifolio com um menu de navegação, uma seção sobre mim e uma galeria de projetos."
+                rows="4"></textarea>
+            <button class="btn-generate">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                gerar Codigo
+            </button>
+        </section>
+        <!-- Abas de navegação -->
+        <section class="tab-contener">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="html">HTML</button>
+                <button class="tab-btn" data-tab="css">CSS</button>
+                <button class="tab-btn" data-tab="js">JS</button>
+                <button class="tab-btn" data-tab="preview">Preview</button>
+            </div>
+            <!-- Conteúdo das abas -->
+            <div class="tab-btn active" id="html">
+                <div class="code-box">
+                    <button class="copy-btn" data-targent="htmlCode">
+                        <i class="fa-solid fa-copy"></i>copiar
+                    </button>
+                    <pre id="htmlCode" class="code-display">// codigo  html aparecerá aqui</pre>
+                </div>
+            </div>
+            <div class="tab-btn active" id="css">
+                <div class="code-box">
+                    <button class="copy-btn" data-targent="cssCode">
+                        <i class="fa-solid fa-copy"></i>copiar
+                    </button>
+                    <pre id="cssCode" class="code-display">// codigo  css aparecerá aqui</pre>
+                </div>
+            </div>
+            <div class="tab-btn active" id="js">
+                <div class="code-box">
+                    <button class="copy-btn" data-targent="jsCode">
+                        <i class="fa-solid fa-copy"></i>copiar
+                    </button>
+                    <pre id="jsCode" class="code-display">// codigo  js aparecerá aqui</pre>
+                </div>
+            </div>
+            <div class="tab-btn active" id="preview">
+                <div class="code-box">
+                    <iframe id="previewFrame" class="preview-frame"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
